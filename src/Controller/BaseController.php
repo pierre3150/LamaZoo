@@ -15,4 +15,13 @@ final class BaseController extends AbstractController
 
         ]);
     }
+
+    #[Route('/contact', name: 'app_contact')]
+    public function contact(): Response
+    {
+        return $this->render('base/contact.html.twig', [
+
+        ]);
+    }
+
 }
